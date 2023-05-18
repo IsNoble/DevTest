@@ -26,6 +26,6 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run migrations
-      run: python /testsite/manage.py migrate
+      run: python PContainer/testsite/manage.py migrate
     - name: Run tests
-      run: python /testsite/manage.py test
+      run: python PContainer/testsite/manage.py test
